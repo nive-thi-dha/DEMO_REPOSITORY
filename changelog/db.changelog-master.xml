@@ -4,6 +4,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
-    <include file="change/EXTERNAL_DB/Investor/STG_CUSTOMER_ADDRESS.sql" relativeToChangelogFile="true"/>
+    <include file="change/EXTERNAL_DB/Investor/STG_INCOME_BAND.sql" relativeToChangelogFile="true"/>
  
 </databaseChangeLog>
