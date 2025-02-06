@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset nivethidhas:7
+--changeset nivethidhas:9
 USE SCHEMA Offerings;
 CREATE OR REPLACE TABLE STG_ORDER
 (
@@ -17,7 +17,7 @@ O_COMMENT VARCHAR(79)
 
 --rollback DROP TABLE STG_ORDER;
 
---changeset nivethidhas:8
+--changeset nivethidhas:10
 INSERT INTO STG_ORDER (SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1000.ORDERS LIMIT 100);
 
 --rollback DELETE FROM STG_ORDER;
