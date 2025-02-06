@@ -1,6 +1,7 @@
 --liquibase formatted sql
 
 --changeset nivethidhas:7
+USE SCHEMA Offerings;
 CREATE OR REPLACE TABLE STG_ORDER
 (
 O_ORDERKEY NUMBER(38,0),
