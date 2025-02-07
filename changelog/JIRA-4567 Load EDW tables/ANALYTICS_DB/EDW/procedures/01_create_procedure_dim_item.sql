@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset nivethidhas:JIRA-4567_ANALYTICS_DB-EDW-PROC_DIM_ITEM_07-02-2025_15:11
+--changeset nivethidhas:JIRA-4567_ANALYTICS_DB-EDW-PROC_DIM_ITEM_07-02-2025_15:12
 
 USE DATABASE ANALYTICS_DB;
 USE SCHEMA EDW;
