@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset nivethidhas:1
+--changeset nivethidhas:JIRA-1234_EXTERNAL_DB_INVESTOR_07-02-2025_15:00
 
 USE DATABASE EXTERNAL_DB;
 USE SCHEMA Investor;
@@ -32,7 +32,7 @@ I_PRODUCT_NAME VARCHAR(50)
 
 --rollback DROP TABLE STG_ITEM;
 
---changeset nivethidhas:2
+--changeset nivethidhas:JIRA-1234_EXTERNAL_DB_INVESTOR_07-02-2025_15:01
 INSERT INTO STG_ITEM (SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.ITEM LIMIT 100);
 
 --rollback DELETE FROM STG_ITEM;
