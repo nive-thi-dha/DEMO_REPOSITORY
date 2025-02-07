@@ -6,6 +6,7 @@
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
     <includeAll path="JIRA-1234 Load EDW tables/EXTERNAL_DB/INVESTOR" relativeToChangelogFile="true"/>
     <includeAll path="JIRA-4567 Load EDW tables/ANALYTICS_DB/EDW" relativeToChangelogFile="true"/>
-          
+    <includeAll path="JIRA-789 Alter Stage views/EXTERNAL_DB/INVESTOR" relativeToChangelogFile="true"/>
+        
  
 </databaseChangeLog>
