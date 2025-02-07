@@ -4,6 +4,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
-    <include file="change/ANALYTICS_DB/EDW/new_table.sql" relativeToChangelogFile="true"/>
+    <include file="JIRA-1234 Load Stage tables/EXTERNAL_DB/INVESTOR" relativeToChangelogFile="true"/>
+    <include file="JIRA-4567 Load EDW tables/ANALYTICS_DB/EDW" relativeToChangelogFile="true"/>
+       
  
 </databaseChangeLog>
