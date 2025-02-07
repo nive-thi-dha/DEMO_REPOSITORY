@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset nivethidhas:1
+--changeset nivethidhas:JIRA-1234_EXTERNAL_DB-INVESTOR-VW_STG_ITEM_07-02-2025_15:04
 
 USE DATABASE EXTERNAL_DB;
 USE SCHEMA Investor;
