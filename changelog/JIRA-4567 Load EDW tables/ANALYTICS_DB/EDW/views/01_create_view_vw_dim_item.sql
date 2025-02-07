@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset nivethidhas:1
+--changeset nivethidhas:JIRA-4567_ANALYTICS_DB-EDW-VW_DIM_ITEM_07-02-2025_15:10
 
 USE DATABASE ANALYTICS_DB;
 USE SCHEMA EDW;
