@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset nivethidhas:1
+--changeset nivethidhas:JIRA-4567_ANALYTICS_DB-EDW-DIM_ITEM_07-02-2025_15:06
 
 USE DATABASE ANALYTICS_DB;
 USE SCHEMA EDW;
@@ -32,7 +32,7 @@ I_PRODUCT_NAME VARCHAR(50)
 
 --rollback DROP TABLE DIM_ITEM;
 
---changeset nivethidhas:2
+--changeset nivethidhas:JIRA-4567_ANALYTICS_DB-EDW-DIM_ITEM_07-02-2025_15:07
 INSERT INTO DIM_ITEM (SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.ITEM LIMIT 100);
 
 --rollback DELETE FROM DIM_ITEM;
