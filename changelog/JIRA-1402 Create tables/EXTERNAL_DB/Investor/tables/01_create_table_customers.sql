@@ -1,0 +1,22 @@
+--liquibase formatted sql
+--changeset nivethidhas:JIRA-1402_EXTERNAL_DB-INVESTOR-CUSTOMERS-14-02-2025_15:05
+USE DATABASE EXTERNAL_DB;
+USE SCHEMA Investor;
+
+CREATE TABLE CUSTOMERS (
+    customer_id INT PRIMARY KEY,
+    first_name STRING,
+    last_name STRING,
+    email STRING,
+    phone STRING,
+    date_of_birth DATE,
+    country STRING
+);
+
+--rollback DROP TABLE CUSTOMERS;
+
+--changeset nivethidhas:JIRA-1402_EXTERNAL_DB-INVESTOR-CUSTOMERS-14-02-2025_15:06
+
+INSERT INTO CUSTOMERS (SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCDS_SF100TCL.CUSTOMER LIMIT 10);
+
+--rollback DELETE FROM CUSTOMERS;
